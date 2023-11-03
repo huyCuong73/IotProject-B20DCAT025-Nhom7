@@ -1,0 +1,54 @@
+.container {
+
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;		
+	cursor: pointer;
+	box-shadow: -3px 3px 5px #888888;
+	border-radius: 15px;
+	height: 100%;
+
+	.title{
+		width: 100%;
+		height: 30%;
+		display: flex;
+		align-items: center;
+		padding-left: 40px;
+		box-sizing: border-box;
+
+		font-size: 30px;
+		font-weight: bold;
+	}
+	
+
+	.dataWrapper{
+		width: 100%;
+		height: 70%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 40px;
+		box-sizing: border-box;
+
+
+		img{
+			height: 70%;
+		}
+	}
+
+	h1 {
+		font-size: 48px;
+	}
+
+}
+
+.flickering {
+	animation: flicker 0.2s  infinite;
+}
+  
+@keyframes flicker {
+	0% { background-color: var(--color); }
+	50% { background-color: white; }
+	100% { background-color: var(--color); }
+  }

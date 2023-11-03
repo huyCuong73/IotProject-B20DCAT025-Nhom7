@@ -1,0 +1,85 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tableContainer{
+        width: 90%;
+        height: 90%;
+        background-color: #fff;
+        padding-top: 60px;
+        box-sizing: border-box;
+
+        .tableHeaderWrapper{
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            
+            .tableHeader{
+                width: 80%;
+                display: flex;
+                height: 70px;
+                background-color: #e7e6e6;
+                border-radius: 10px 10px 0 0;
+                // border: 3px solid #e7e6e6;
+
+                box-shadow: 2px 2px 5px rgb(122, 122, 122);
+
+                .itemHeader{
+                    width: 25%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;
+                    padding-bottom: 2px;
+                    font-size: 19px;
+                    color: #5c5b5b;
+                    font-weight: bold;
+                    position: relative;
+
+
+                    
+                }
+            }
+        }
+        .tableBodyWrapper{
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+
+            .tableBody{
+                width: 80%;
+                border-radius: 0 0 20px 20px;
+                // border: 3px solid #e7e6e6;
+                box-shadow: 2px 2px 5px rgb(122, 122, 122);
+
+                .bodyRow{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 20px;
+    
+                    
+                    .item{
+                        width: 25%;
+                        height: 100px;
+                        border-top: 2px solid #cfcbcb;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-sizing: border-box;
+                        padding-bottom: 2px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination {
+        position: absolute;
+        bottom: 50px;
+    }
+}
